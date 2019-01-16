@@ -1,4 +1,4 @@
-#### NOM : BAUGUIL   Prénom : Océane
+#### NOM .................. Prénom .................. 
 
 
 ## LP MMS / 2018-2019 /Examen pratique / Persistance des données
