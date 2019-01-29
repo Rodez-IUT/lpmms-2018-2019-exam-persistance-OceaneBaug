@@ -3,6 +3,7 @@ package ourbusinessproject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.Entity;
 import javax.transaction.Transactional;
 
 @Service
@@ -54,6 +55,7 @@ public class InitializationService {
         enterprise1.setDescription("E1 description");
         enterprise1.setContactName("Paul Durand");
         enterprise1.setContactEmail("paul.durand@e1.com");
+        
     }
 
     private void initEnterprise2() {

@@ -34,12 +34,16 @@ public class Enterprise {
     @Size(min = 3)
     private String contactEmail;
 
-    @OneToMany(mappedBy = "enterprise")
+    @OneToMany(cascade = {CascadeType.ALL}, mappedBy = "enterprise")
     @JsonIgnore
     private Collection<Project> projects;
 
     public Long getId() {
         return id;
+    }
+    
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {

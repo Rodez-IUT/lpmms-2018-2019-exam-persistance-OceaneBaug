@@ -19,7 +19,7 @@ public class Project {
 
 
     @NotNull
-    @ManyToOne(cascade = {CascadeType.PERSIST})
+    @ManyToOne(cascade = {CascadeType.ALL})
     private Enterprise enterprise;
 
     public Project() {}
@@ -31,6 +31,10 @@ public class Project {
 
     public Long getId() {
         return id;
+    }
+    
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitle() {
